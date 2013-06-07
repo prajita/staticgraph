@@ -53,7 +53,7 @@ def test_edges(testgraph):
 
 def test_neighbours(testgraph):
     """
-    Test the successors for every node
+    Test the neighbours for every node
     """
 
     for u in testgraph[0].nodes_iter():
