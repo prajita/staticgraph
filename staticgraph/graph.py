@@ -128,7 +128,7 @@ def save(store, G):
     Save the graph to disk.
 
     store - the directory where the graph will be stored
-    G     - the direceted graph
+    G     - the undireceted graph
     """
 
     # Create the directory
