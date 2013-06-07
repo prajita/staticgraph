@@ -4,8 +4,8 @@ Simple memory efficient undirected graph.
 
 import cPickle as pk
 from itertools import imap
-from os.path import join, exists, mkdir
-
+from os.path import join, exists
+from os import mkdir
 import numpy as np
 import staticgraph.edgelist as edgelist
 
@@ -95,7 +95,7 @@ class Graph(object):
         """
         Check if edge (u, v) exists.
         """
-        if v > u:
+        if u > v:
             u, v = v, u
 
         return (v in self.neighbours(u))
